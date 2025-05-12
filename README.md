@@ -1,6 +1,6 @@
 # 💼 Clinical Data Warehouse UI – Final Project (HI 741)
 
-This Python-based desktop application supports the management of patient records and clinical notes using a simple Tkinter interface. Built with a soft **pink UI theme** for visual clarity and comfort, the program enables role-based access to patient data, allowing different users to interact with the system according to their permissions.
+This Python-based desktop application supports the management of patient records and clinical notes using a simple Tkinter interface. Built with a light pink UI for visual clarity and comfort, the program enables role-based access to patient data, allowing different users to interact with the system according to their permissions.
 
 ---
 
@@ -61,7 +61,7 @@ bash
 Copy
 Edit
 python main_entry.py
-The UI will open in a soft pink theme. Enter credentials from credentials.csv to begin.
+The UI will open in a light pink box. Enter credentials from credentials.csv to begin.
 
 📦 Requirements
 txt
