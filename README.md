@@ -1,154 +1,32 @@
-# 💖 Clinical Data Warehouse UI – Final Project (HI 741) 💖
+# Clinical Data Warehouse UI – Final Project (HI 741)
 
-Welcome to Yemimah Ndoyi’s fabulous take on healthcare tech!  
-This project is a desktop application that manages patient records, clinical notes, and usage logs — all wrapped up in a *pink-powered*, user-friendly interface. 🎀👩🏾‍⚕️📊
-
----
-
-## 🌸 Features That Slay
-
-- 💅🏼 Gorgeous pink-themed login window
-- 🔐 Secure role-based login system
-- 🧍‍♀️ Add, remove, and retrieve patient information
-- 📝 View clinical notes for specific dates
-- 📆 Count patient visits on any given day
-- 📊 Generate visual statistics (charts are cute too)
-- 🧾 Automatically logs user actions for transparency
+This project is a Python-based desktop application developed for managing patient records and clinical notes in a clinical setting. The program provides a user interface using Tkinter and supports role-based access to ensure data security and compliance with privacy standards.
 
 ---
 
-## 🧠 User Roles & Access Levels
+## Features
 
-| 💼 Role        | 💡 What They Can Do |
-|---------------|---------------------|
-| `clinician`   | Everything! Total queen of the system 👑 |
-| `nurse`       | Same powers as a clinician (because nurses run the show) |
-| `admin`       | Can count patient visits — and that’s it, bestie 💼 |
-| `management`  | Just view statistics 📈 — no patient tea for them! |
-
----
-
-## 🗂️ Folder Vibes
-
-Yemimah_Ndoyi_FinalProject/
-├── main_entry.py
-├── clinical_ui.py
-├── patient_data.py
-├── login_user.py
-├── helper_utils.py
-├── README.md
-├── requirements.txt
-├── UML_Diagram.png (optional but cute)
-├── data/
-│ ├── patients.csv
-│ ├── credentials.csv
-│ └── notes.csv
-└── output/
-├── usage_log.csv
-└── updated_patients.csv
-
-yaml
-Copy
-Edit
+- Role-based login system with credential verification
+- Retrieve, add, and remove patient records
+- View clinical notes by patient ID and visit date
+- Count total patient visits on a specific date
+- Generate basic statistics and visual summaries
+- Record all user actions in a usage log for audit tracking
 
 ---
 
-## 🛠️ How to Run It (in Heels or Sneakers)
+## User Roles and Permissions
 
-1. **Open Terminal / Command Prompt**
-
-2. Navigate to your project folder:
-
-```bash
-cd "C:\Users\acamp\OneDrive\Desktop\YemimahNdoyi Final"
-Install required packages:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Launch it with 💕:
-
-bash
-Copy
-Edit
-python main_entry.py
-💖 Packages
-These are all the tech tools this glam program needs:
-
-txt
-Copy
-Edit
-pandas
-matplotlib
-(Everything else comes built-in, just like your confidence.)
-
-👑 Credits
-Developer: Yemimah Ndoyi
-Course: HI 741 – Programming for Health Informatics
-Instructor: Dr. Lu He
-Semester: Spring 2025
-
-💬 Final Words
-She logs.
-She counts.
-She slays.
-
-This program is smart, stylish, and HIPAA-aware — just like you.
-Now go ahead and run it, bestie! 💻✨
-
-yaml
-Copy
-Edit
+| Role        | Access Level                                             |
+|-------------|----------------------------------------------------------|
+| Clinician   | Full access to all features and patient data             |
+| Nurse       | Same access as clinician                                 |
+| Admin       | Can count patient visits only                            |
+| Management  | Can generate system statistics (no access to PHI)        |
 
 ---
 
-Would you like me to upload this version into your project now or style the UML diagram next to match the vibe? 💖
-
-
-
-
-
-You said:
-you dont have to do the features that slay and stuff keep it professional but make it cute and asian
-
-
-ChatGPT said:
-Got it! Here's a professional, clean, and cute README.md with soft Asian aesthetic vibes — think organized, minimal, gentle, and thoughtful 🌸📊✨
-
-markdown
-Copy
-Edit
-# 🌸 Clinical Data Warehouse UI — Final Project (HI 741)
-
-Created with care by **Yemimah Ndoyi**, this Python-based desktop application is designed to manage clinical data with elegance and precision. Built using **Tkinter**, this program offers role-based access to patient records, notes, and system statistics — all wrapped in a calm, pink-themed interface that reflects harmony and clarity. 🌸
-
----
-
-## 🧘‍♀️ Key Features
-
-- ✨ Clean, user-friendly graphical interface
-- 🔐 Secure login with role-based access
-- 🩺 Retrieve, add, or remove patient information
-- 📄 View clinical notes by patient and date
-- 📈 Generate key statistics with visual charts
-- 📅 Count patient visits by date
-- 📝 Automatically logs all user actions to a usage file
-
----
-
-## 🎎 User Roles & Permissions
-
-| Role        | Permissions                                         |
-|-------------|-----------------------------------------------------|
-| `clinician` | Full access to all patient data and features        |
-| `nurse`     | Same as clinician                                    |
-| `admin`     | Can count total visits only                         |
-| `management`| Can generate system statistics (no PHI access)      |
-
----
-
-## 🗂️ Folder Structure
+## Project Structure
 
 Yemimah_Ndoyi_FinalProject/
 ├── main_entry.py
@@ -173,34 +51,133 @@ Edit
 
 ---
 
-## 🪷 How to Run the Program
+## Installation and Usage
 
-### Step 1: Install Required Packages
-```bash
-pip install -r requirements.txt
-Step 2: Launch the Application
+1. **Install dependencies**  
+   Open a terminal in the project directory and run:
+   ```bash
+   pip install -r requirements.txt
+Run the program
+
 bash
 Copy
 Edit
 python main_entry.py
-Note:
-Make sure the data/ and output/ folders are in the same directory as your code.
+Login
+Use credentials found in data/credentials.csv.
 
-📦 Requirements
-This program requires the following Python packages:
-
+Requirements
 txt
 Copy
 Edit
 pandas
 matplotlib
-(tkinter is included by default in Python installations.)
+Note: tkinter is included by default in most Python installations.
 
-📝 Developer & Course Info
+Author
 Name: Yemimah Ndoyi
 Course: HI 741 – Programming for Health Informatics
 Instructor: Dr. Lu He
 Semester: Spring 2025
 
-🌸 Thank You
-This project was developed to combine functionality with thoughtful design — a calm interface for complex clinical workflows. Thank you for reviewing my work! 🌿
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you'd like me to save this as a `README.md` file for you.
+
+
+
+
+
+You said:
+Make it look cool though still like make it color coded pink in some parts
+
+
+ChatGPT said:
+Perfect — here's a professional yet visually appealing README.md with subtle pink accents using markdown best practices. It’s clean, academic, and still has personality 🌸.
+
+markdown
+Copy
+Edit
+# 💼 Clinical Data Warehouse UI – Final Project (HI 741)
+
+This Python-based desktop application supports the management of patient records and clinical notes using a simple Tkinter interface. Built with a soft **pink UI theme** for visual clarity and comfort, the program enables role-based access to patient data, allowing different users to interact with the system according to their permissions.
+
+---
+
+## 🌸 Key Features
+
+- 🔐 **Role-based login** with credential verification  
+- 📋 **Retrieve**, **add**, and **remove** patient records  
+- 📝 **View clinical notes** by patient ID and date  
+- 📆 **Count patient visits** for a specific date  
+- 📊 **Generate summary statistics** with charts  
+- 🧾 **Log all user actions** for auditing purposes
+
+---
+
+## 🔐 User Roles & Access
+
+| **Role**       | **Access Level**                                              |
+|----------------|---------------------------------------------------------------|
+| `Clinician`    | Full access to patient data and all system features           |
+| `Nurse`        | Same as Clinician                                             |
+| `Admin`        | Can only count total visits (no access to PHI)                |
+| `Management`   | Can generate system statistics (no access to patient records) |
+
+---
+
+## 📁 Project Structure
+
+Yemimah_Ndoyi_FinalProject/
+├── main_entry.py
+├── clinical_ui.py
+├── patient_data.py
+├── login_user.py
+├── helper_utils.py
+├── README.md
+├── requirements.txt
+├── UML_Diagram.png
+├── data/
+│ ├── credentials.csv
+│ ├── patients.csv
+│ └── notes.csv
+└── output/
+├── usage_log.csv
+└── updated_patients.csv
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ How to Run
+
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+2. Launch the application
+bash
+Copy
+Edit
+python main_entry.py
+The UI will open in a soft pink theme. Enter credentials from credentials.csv to begin.
+
+📦 Requirements
+txt
+Copy
+Edit
+pandas
+matplotlib
+Note: tkinter is built-in with most standard Python installations.
+
+👩‍💻 Developer Info
+Name: Yemimah Ndoyi
+Course: HI 741 – Programming for Health Informatics
+Instructor: Dr. Lu He
+Semester: Spring 2025
+
